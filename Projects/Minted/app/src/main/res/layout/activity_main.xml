@@ -27,10 +27,13 @@
         android:layout_alignParentEnd="false"
         android:layout_alignParentBottom="false"
         android:layout_centerInParent="true"
+        android:layout_marginTop="540dp"
         android:clickable="false"
         android:enabled="true"
         android:text="@string/title"
         android:textColor="#ffffff"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        
+        />
 
 </RelativeLayout>
