@@ -33,7 +33,7 @@
         android:text="@string/title"
         android:textColor="#ffffff"
         android:textSize="50sp"
-        
+
         />
 
 </RelativeLayout>
