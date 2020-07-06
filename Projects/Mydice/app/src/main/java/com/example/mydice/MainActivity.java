@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         final ImageView leftDice = (ImageView)findViewById(R.id.image_leftdice); // 左骰子連結
         final ImageView rightDice = (ImageView)findViewById(R.id.image_rightdice); // 右骰連結
+        final TextView textResult = (TextView)findViewById(R.id.textResult);
 
         final int[] diceArray = {
 
@@ -47,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
 
                 int number2 = varRandomNum.nextInt(6);
                 rightDice.setImageResource(diceArray[number2]);
+
+                textResult.setText(Integer.toString(number+number2+2) );
+
+
             }
         });
     }
